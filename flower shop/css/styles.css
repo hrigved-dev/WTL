@@ -1,0 +1,100 @@
+* {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../images/pexel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .content h3 {
+    font-size: 2.5rem;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+}
+
+.btn {
+    background-color:#FF008E;
+    color: white;
+    font-size: 1rem;
+    border-radius: 1rem;
+    width: 7rem;
+    height: 3rem;
+    border: 2px solid #D22779;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #D22779;
+}
+
+.navbar {
+    font-size: 1.5rem;
+}
+
+.item {
+    color: #0C1E7F;
+    padding-left: 1.5rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.box {
+    flex: 1 1 30rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.price {
+    padding-bottom: 1rem;
+}
+
+.image {
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.image img {
+    height: 15rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.formfield {
+    padding-left: 5rem;
+    height: 2rem;
+    flex-wrap: wrap;
+    position: relative;
+}
