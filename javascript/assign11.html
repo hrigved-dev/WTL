@@ -1,12 +1,28 @@
-<html>
-    <head>
-        <script>
-            const number = parseInt(window.prompt("Enter an integer: "));
-            for(let i=0; i<=10; i++) {
-                const result = i*number;
-                console.log(`${number} * ${i} = ${result}`);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="table" border="1"></table>
+    <button onclick="myfnc()">add</button>
+    <script>
+        function myfnc(){
+            var table=document.getElementById("table")
+            for(var i=1;i<=5;i++){
+                var tr=document.createElement("tr");
+                for(var j=1;j<=5;j++){
+                    var td=document.createElement("td");
+                    var val=document.createTextNode(i*j);
+                    td.appendChild(val);
+                    tr.appendChild(td);
+                }
+                table.appendChild(tr);
             }
-        </script>
-    </head>
-    <body></body>
+        }
+    </script>
+</body>
 </html>

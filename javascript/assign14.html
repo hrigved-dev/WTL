@@ -1,15 +1,21 @@
 <html>
-    <head>
-        <script>
-            var x = document.getElementById('sample table').insertRow(0);
-            var y = x.insertCell(0);
-            var z = x.insertCell(1);
-            y.innerHTML = 'New Cell1';
-            z.innerHTML = 'New Cell2';
-        </script>
-    </head>
+    <head><title></title></head>
+    <style>
+    </style>
     <body>
-        <table class="sample table">
+        <button onclick="func()">add</button>
+        <table id="table" border="1">
+            <tr><td>new data</td><td>new data</td><td>new data</td></tr>
         </table>
+        <script>
+            function func(){
+                var tr=document.createElement("tr");
+                tr.appendChild(document.createElement("td"));
+                tr.appendChild(document.createElement("td"));
+                tr.appendChild(document.createElement("td"));
+                var table=document.getElementById("table");
+                table.appendChild(tr);
+            }
+        </script>
     </body>
 </html>
