@@ -1,47 +1,30 @@
-<!DOCTYPE html>
-<head>
-    <script>
-        var size = parseInt(window.prompt("Enter the size of the array"));
+<html>
+    <head>
+        <script>
+            var n = parseInt(window.prompt("Enter the size of array: "));
+            const arr = [];
 
-        var arr = new Array();
-
-        for(let i=0; i<size; i++) {
-            arr[i] = parseInt(window.prompt("Enter the array value at " + i + " index"));
-        }
-
-        function display(arr) {
-            document.write("The array is: ")
-            for(let i=0; i<size; i++) {
-            document.write(arr[i] +  " ");
-        }
-        }
-
-        function sort(arr) {
-            document.write("The sorted array is: ")
-            arr.sort();
-        }
-
-        function push(arr) {
-            arr.push("30");
-            for(let i=0; i<size; i++) {
-                document.write("After pushing" + arr[i] + " ");
+            for(let i=0; i<n; i++) {
+                arr[i] = parseInt(window.prompt("Enter the element "+(i+1)));
             }
-        }
-
-        function pop(arr) {
             
-        }
+            document.write("The array is: " + "<br>");
+            for(let i=0; i<n; i++) {
+                document.write(arr[i] + " ");
+            }
 
-                
-        display(arr);
-        document.write("\n");
-        sort(arr);
-        document.write(push(arr));
-        console.log(arr.pop(arr[3]));
-        document.write("Length of array is " + arr.length + "<br>");
-        document.write("Element at position 3 is: " + arr[3]);
-    
-    </script>
+            document.write("<br>The sorted array is: " + "<br>");
+            document.write(arr.sort() + "<br>");
+
+            document.write("The array after pushing 25: " + "<br>");
+            arr.push(25);
+            document.write(arr);
+
+            document.write("The length of array is: " + n + "<br>");
+
+            document.write("The element at position 3 is: " + arr[2] + "<br>");
+
+        </script>
+    </head>
     <body></body>
-</head>
 </html>

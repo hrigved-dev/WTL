@@ -1,21 +1,22 @@
-<!DOCTYPE html>
-<head>
-    <script>
-        function changeColor() {
-        let changedColor;
-        changedColor = document.getElementById("colorNow").value;
-        document.div.style.backgroundColor = changedColor;
-        }
-        
-    </script>
-    <body >
-        <div style="color: beige;">
-            <form>
-                <input type="text" placeholder="Color" id="colorNow">
-                <button type="button" onclick="changeColor()">Change</button>
-            </form>
-        </div>
-        
+<html>
+    <head>
+        <script>
+            function changeColor() {
+                var color = window.prompt("Enter color");
+                var element = document.getElementById("myDiv");
+                element.style.backgroundColor = color;
+            }
+        </script>
+    </head>
+    <body>
+        <h2>Change Color of Div</h2>
+        <div id="myDiv" style="border:1px solid">
+        <p>Color changes after input</p>
+        <span>This is a span</span>
+        <br>
+        <br>
+        <br>
+    </div>
+    <button type="button" onclick="changeColor()">Change</button>
     </body>
-</head> 
 </html>
