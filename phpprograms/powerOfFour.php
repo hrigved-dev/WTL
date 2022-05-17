@@ -16,14 +16,25 @@
     if(isset($_POST['submit'])) {
         $number = $_POST['number'];
 
-        $isPower = false;
-        
-        while ($number > 1 ) {
-            if($number % 4 == 0) {
-                $number = $number /4;
-            }
-            echo $number + '<br>';
-        }
+        function is_Power_of_four($n)
+{
+      $x = $n;
+      while ($x % 4 == 0) {
+      $x /= 4;
+     }
+       
+	if($x == 1)
+    {
+		return "$n is power of 4";
+    }
+    else
+    {
+		return "$n is not power of 4";
+    }
+  
+}
+
+ echo is_Power_of_four($number);
         
     }
 ?>
