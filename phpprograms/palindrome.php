@@ -27,7 +27,7 @@
             }
         }
 
-        isPalindrome2($string);
+        isPalindrome($string);
 
     }
 ?>
